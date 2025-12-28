@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Kwapong Foundation - Empowering young people with health support and community programs">
+    <title>The Kwapong Foundation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home">
+                        <svg class="logo-icon" width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Hands forming heart shape - care and support -->
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#7A9E7E;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#7BA7BC;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Left hand -->
+                            <path d="M 25 35 Q 20 45, 25 55 L 35 65 L 50 75 L 50 50 L 35 40 Z"
+                                  fill="url(#logoGradient)" opacity="0.85"/>
+
+                            <!-- Right hand -->
+                            <path d="M 75 35 Q 80 45, 75 55 L 65 65 L 50 75 L 50 50 L 65 40 Z"
+                                  fill="url(#logoGradient)" opacity="0.85"/>
+
+                            <!-- Heart center -->
+                            <path d="M 50 50 Q 45 45, 40 50 Q 40 55, 50 65 Q 60 55, 60 50 Q 55 45, 50 50 Z"
+                                  fill="url(#logoGradient)"/>
+                        </svg>
+                        <span class="logo-text">Kwapong Foundation</span>
+                    </a>
+                </div>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#impact">Our Impact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#donate" class="btn-donate-nav">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-image-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-logo">
+                        <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Hands forming heart shape - care and support -->
+                            <defs>
+                                <linearGradient id="heroLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.95" />
+                                    <stop offset="100%" style="stop-color:#D4E5F1;stop-opacity:0.9" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Left hand -->
+                            <path d="M 20 30 Q 15 42, 20 54 L 32 66 L 50 78 L 50 48 L 32 36 Z"
+                                  fill="url(#heroLogoGradient)" opacity="0.9"/>
+
+                            <!-- Right hand -->
+                            <path d="M 80 30 Q 85 42, 80 54 L 68 66 L 50 78 L 50 48 L 68 36 Z"
+                                  fill="url(#heroLogoGradient)" opacity="0.9"/>
+
+                            <!-- Heart center -->
+                            <path d="M 50 48 Q 44 42, 38 48 Q 38 54, 50 68 Q 62 54, 62 48 Q 56 42, 50 48 Z"
+                                  fill="url(#heroLogoGradient)"/>
+                        </svg>
+                    </div>
+                    <h1>Together We Thrive</h1>
+                    <p class="hero-tagline">Supporting young people with their health and wellbeing in UK & Ghana</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-mobile-alt"></i> View Our Projects
+                        </a>
+                        <a href="#donate" class="btn btn-secondary">
+                            <i class="fas fa-heart"></i> Support Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Pillars (Visual Icons) -->
+        <section class="mission" id="mission">
+            <div class="container">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <div class="mission-icon healthcare">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Healthcare</h3>
+                        <p>Medical support & treatment access</p>
+                    </div>
+
+                    <div class="mission-card">
+                        <div class="mission-icon education">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>Awareness & health literacy</p>
+                    </div>
+
+                    <div class="mission-card">
+                        <div class="mission-icon community">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>Social inclusion & mentoring</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Impact -->
+        <section class="what-we-do" id="impact">
+            <div class="container">
+                <h2 class="section-title">Our Impact</h2>
+                <p class="section-subtitle">Supporting young people across UK & Ghana</p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Healthcare Support</h3>
+                        <p>Connecting young people with specialist care, supporting treatment adherence through technology, and providing resources for better health outcomes</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3>Education & Empowerment</h3>
+                        <p>Health literacy programs, community workshops, and educational resources empowering young people to take control of their health journey</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Community Building</h3>
+                        <p>Mentoring programs, peer support networks, and community events fostering connection, resilience, and reducing isolation among young people</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Projects -->
+        <section class="app-showcase" id="projects">
+            <div class="container">
+                <div class="app-content">
+                    <div class="app-phone">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="screen-header">
+                                    <div class="status-bar">
+                                        <span>9:41</span>
+                                        <div class="status-icons">
+                                            <i class="fas fa-signal"></i>
+                                            <i class="fas fa-wifi"></i>
+                                            <i class="fas fa-battery-full"></i>
+                                        </div>
+                                    </div>
+                                    <div class="app-logo">
+                                        <div class="logo-circle">🩸</div>
+                                        <h4>Crimson Warriors</h4>
+                                    </div>
+                                </div>
+                                <div class="screen-content">
+                                    <div class="feature-preview">
+                                        <i class="fas fa-trophy"></i>
+                                        <p>Track • Earn • Achieve</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app-info">
+                        <h2>Crimson Warriors</h2>
+                        <p class="app-tagline">Supporting young people living with Sickle Cell Disease</p>
+
+                        <div class="features-grid">
+                            <div class="feature">
+                                <i class="fas fa-pills"></i>
+                                <span>Medication Tracking</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Daily Check-ins</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-trophy"></i>
+                                <span>Gamification</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>Community</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hospital"></i>
+                                <span>Find Clinics</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Progress Tracking</span>
+                            </div>
+                        </div>
+
+                        <div class="app-download">
+                            <a href="#" class="store-btn">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <small>Download on</small>
+                                    <strong>App Store</strong>
+                                </div>
+                            </a>
+                            <a href="#" class="store-btn">
+                                <i class="fab fa-google-play"></i>
+                                <div>
+                                    <small>Get it on</small>
+                                    <strong>Google Play</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved (Visual Cards) -->
+        <section class="get-involved">
+            <div class="container">
+                <h2 class="section-title">Get Involved</h2>
+                <div class="involvement-grid">
+                    <div class="involvement-card">
+                        <div class="card-icon donate">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Donate</h3>
+                        <p>Support our mission</p>
+                        <a href="#donate" class="card-link">Donate Now →</a>
+                    </div>
+
+                    <div class="involvement-card">
+                        <div class="card-icon volunteer">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Volunteer</h3>
+                        <p>Share your time</p>
+                        <a href="#contact" class="card-link">Join Us →</a>
+                    </div>
+
+                    <div class="involvement-card">
+                        <div class="card-icon partner">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Partner</h3>
+                        <p>Collaborate with us</p>
+                        <a href="#contact" class="card-link">Partner →</a>
+                    </div>
+
+                    <div class="involvement-card">
+                        <div class="card-icon spread">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Spread</h3>
+                        <p>Share our story</p>
+                        <a href="#" class="card-link">Share →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donate Section -->
+        <section class="donate" id="donate">
+            <div class="container">
+                <h2>Support Our Mission</h2>
+                <p class="donate-text">Every contribution empowers young people to thrive in their health journey</p>
+
+                <div class="donate-impact">
+                    <div class="impact-box">
+                        <h4 class="one-time-amount">£25</h4>
+                        <h4 class="monthly-amount" style="display: none;">£25/mo</h4>
+                        <p class="one-time-text">Supports one young person's health journey for a month</p>
+                        <p class="monthly-text" style="display: none;">Supports one young person year-round with health resources</p>
+                    </div>
+                    <div class="impact-box">
+                        <h4 class="one-time-amount">£50</h4>
+                        <h4 class="monthly-amount" style="display: none;">£50/mo</h4>
+                        <p class="one-time-text">Funds educational programs and community building</p>
+                        <p class="monthly-text" style="display: none;">Funds ongoing education and community support</p>
+                    </div>
+                    <div class="impact-box">
+                        <h4 class="one-time-amount">£100</h4>
+                        <h4 class="monthly-amount" style="display: none;">£100/mo</h4>
+                        <p class="one-time-text">Provides technology and healthcare resources for multiple young people</p>
+                        <p class="monthly-text" style="display: none;">Provides sustained support for our programs</p>
+                    </div>
+                </div>
+
+                <!-- Monthly/One-time Toggle -->
+                <div class="donation-frequency">
+                    <p class="frequency-label">Choose your support type:</p>
+                    <div class="frequency-toggle">
+                        <button class="frequency-btn active" data-frequency="onetime">
+                            <i class="fas fa-gift"></i>
+                            <span>One-time</span>
+                        </button>
+                        <button class="frequency-btn" data-frequency="monthly">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Monthly</span>
+                            <small class="impact-badge">42% More Impact!</small>
+                        </button>
+                    </div>
+                    <p class="monthly-benefit">
+                        <i class="fas fa-heart"></i>
+                        Monthly giving provides sustainable support for young people
+                    </p>
+                </div>
+
+                <div class="donate-amounts">
+                    <button class="amount-btn" data-amount="25">£25</button>
+                    <button class="amount-btn active" data-amount="50">£50</button>
+                    <button class="amount-btn" data-amount="100">£100</button>
+                    <button class="amount-btn" data-amount="250">£250</button>
+                    <button class="amount-btn" data-amount="custom">Custom</button>
+                </div>
+
+                <div id="custom-amount-input" style="display: none; margin: var(--space-24) 0;">
+                    <input type="number" id="customAmount" placeholder="Enter amount in £" min="1"
+                           style="padding: var(--space-12) var(--space-16); border-radius: var(--radius-md);
+                                  border: 2px solid var(--zen-sage); font-size: 1rem; width: 100%; max-width: 300px;">
+                </div>
+
+                <!-- JustGiving Button -->
+                <div style="margin-top: var(--space-32); text-align: center;">
+                    <a href="https://www.justgiving.com/campaign/kwapongfoundation"
+                       id="justgiving-button"
+                       class="btn-donate-lg"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fas fa-heart"></i>
+                        <span id="donate-amount-text">Donate £50</span>
+                    </a>
+                </div>
+
+                <p class="donate-note">
+                    <i class="fas fa-lock"></i> Secure payment powered by JustGiving
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact (Minimal) -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <a href="mailto:info@kwapongfoundation.org">info@kwapongfoundation.org</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Chatham, Kent, UK</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <h4>Regions</h4>
+                        <p>UK & Ghana</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#A8C69F;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#9DC3E6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Left hand -->
+                            <path d="M 25 35 Q 20 45, 25 55 L 35 65 L 50 75 L 50 50 L 35 40 Z"
+                                  fill="url(#footerLogoGradient)" opacity="0.85"/>
+                            <!-- Right hand -->
+                            <path d="M 75 35 Q 80 45, 75 55 L 65 65 L 50 75 L 50 50 L 65 40 Z"
+                                  fill="url(#footerLogoGradient)" opacity="0.85"/>
+                            <!-- Heart center -->
+                            <path d="M 50 50 Q 45 45, 40 50 Q 40 55, 50 65 Q 60 55, 60 50 Q 55 45, 50 50 Z"
+                                  fill="url(#footerLogoGradient)"/>
+                        </svg>
+                        <span>Kwapong Foundation</span>
+                    </div>
+                    <p>Empowering young people</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Foundation</h4>
+                    <ul>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#">Trustees</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Constitution</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Kwapong Foundation • Registered CIO</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

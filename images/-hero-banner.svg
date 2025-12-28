@@ -1,0 +1,80 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8C69F;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9DC3E6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7BA7BC;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="circleGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B8D8BE;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#7A9E7E;stop-opacity:0.4" />
+    </linearGradient>
+
+    <linearGradient id="circleGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4E5F1;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#7BA7BC;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base gradient -->
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+
+  <!-- Decorative circles representing community/unity -->
+  <!-- Top left cluster -->
+  <circle cx="300" cy="200" r="180" fill="url(#circleGradient1)" opacity="0.6"/>
+  <circle cx="450" cy="250" r="140" fill="url(#circleGradient2)" opacity="0.5"/>
+  <circle cx="350" cy="350" r="120" fill="url(#circleGradient1)" opacity="0.4"/>
+
+  <!-- Top right cluster -->
+  <circle cx="1600" cy="150" r="200" fill="url(#circleGradient2)" opacity="0.5"/>
+  <circle cx="1500" cy="300" r="150" fill="url(#circleGradient1)" opacity="0.6"/>
+
+  <!-- Bottom left -->
+  <circle cx="200" cy="850" r="160" fill="url(#circleGradient2)" opacity="0.4"/>
+  <circle cx="400" cy="900" r="130" fill="url(#circleGradient1)" opacity="0.5"/>
+
+  <!-- Bottom right cluster -->
+  <circle cx="1700" cy="800" r="220" fill="url(#circleGradient1)" opacity="0.5"/>
+  <circle cx="1550" cy="900" r="170" fill="url(#circleGradient2)" opacity="0.6"/>
+  <circle cx="1600" cy="700" r="140" fill="url(#circleGradient1)" opacity="0.4"/>
+
+  <!-- Center area - lighter for text readability -->
+  <circle cx="960" cy="540" r="350" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="960" cy="540" r="280" fill="#FFFFFF" opacity="0.05"/>
+
+  <!-- Connecting curves suggesting unity -->
+  <path d="M 300 200 Q 960 100, 1600 150"
+        stroke="#FFFFFF"
+        stroke-width="3"
+        fill="none"
+        opacity="0.15"
+        stroke-dasharray="10,10"/>
+
+  <path d="M 200 850 Q 960 700, 1700 800"
+        stroke="#FFFFFF"
+        stroke-width="3"
+        fill="none"
+        opacity="0.15"
+        stroke-dasharray="10,10"/>
+
+  <!-- Abstract human figures silhouettes -->
+  <!-- Left figure -->
+  <g opacity="0.15" fill="#2C3E50">
+    <circle cx="600" cy="450" r="35"/>
+    <ellipse cx="600" cy="550" rx="50" ry="80"/>
+  </g>
+
+  <!-- Center figure -->
+  <g opacity="0.12" fill="#2C3E50">
+    <circle cx="960" cy="480" r="40"/>
+    <ellipse cx="960" cy="590" rx="55" ry="90"/>
+  </g>
+
+  <!-- Right figure -->
+  <g opacity="0.15" fill="#2C3E50">
+    <circle cx="1320" cy="460" r="35"/>
+    <ellipse cx="1320" cy="560" rx="50" ry="80"/>
+  </g>
+</svg>
