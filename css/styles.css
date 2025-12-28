@@ -86,6 +86,8 @@ html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -95,6 +97,9 @@ body {
     background: var(--bg-white);
     font-weight: 400;
     letter-spacing: -0.01em;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1490,7 +1495,7 @@ section {
     }
 
     h1 {
-        font-size: clamp(1.5rem, 8vw, 2rem);
+        font-size: clamp(1.5rem, 8vw, 2rem) !important;
         line-height: 1.2;
     }
 
@@ -1505,6 +1510,15 @@ section {
     .container {
         padding: 0 var(--space-20);
         max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Hide decorative elements that cause overflow */
+    .hero::before,
+    .what-we-do::before,
+    section::before,
+    section::after {
+        display: none !important;
     }
 
     .hero {
