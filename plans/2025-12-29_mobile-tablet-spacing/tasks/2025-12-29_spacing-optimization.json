@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "content": "[Phase-1] Analyze current spacing issues in CSS",
+    "status": "completed"
+  },
+  {
+    "id": "2",
+    "content": "[Phase-2] Update mobile breakpoint (≤768px) spacing",
+    "status": "completed"
+  },
+  {
+    "id": "3",
+    "content": "[Phase-3] Refine tablet breakpoint (769px-1024px) spacing",
+    "status": "pending"
+  },
+  {
+    "id": "4",
+    "content": "[Phase-4] Small mobile refinements (≤480px)",
+    "status": "pending"
+  },
+  {
+    "id": "5",
+    "content": "[Phase-5] Cross-section consistency check",
+    "status": "pending"
+  },
+  {
+    "id": "6",
+    "content": "[Phase-6] Testing and refinement",
+    "status": "pending"
+  }
+]

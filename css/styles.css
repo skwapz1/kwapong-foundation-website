@@ -1333,7 +1333,7 @@ section {
 /* ===== Responsive ===== */
 /* ===== Responsive Design ===== */
 
-/* Tablet */
+/* Tablet & Mobile (≤768px) */
 @media (max-width: 768px) {
     .nav-toggle {
         display: flex;
@@ -1361,17 +1361,33 @@ section {
         visibility: visible;
     }
 
+    /* Section spacing - reduced for better mobile feel */
+    section {
+        padding: var(--space-32) 0;
+    }
+
+    .section-title {
+        margin-bottom: var(--space-32);
+    }
+
+    .section-subtitle {
+        margin-bottom: var(--space-24);
+    }
+
+    /* Hero section */
     .hero {
         min-height: 60vh;
-        padding: var(--space-48) 0;
+        padding: var(--space-32) 0;
     }
 
     .hero h1 {
         font-size: clamp(2.25rem, 7vw, 3.5rem);
+        margin-bottom: var(--space-16);
     }
 
     .hero-tagline {
         font-size: 1.125rem;
+        margin-bottom: var(--space-24);
     }
 
     .hero-cta {
@@ -1384,17 +1400,26 @@ section {
         width: 100%;
         max-width: 320px;
         justify-content: center;
-        padding: var(--space-16) var(--space-24);
+        padding: var(--space-16) var(--space-32);
         font-size: 1.125rem;
     }
 
     .hero .container,
     .app-content {
         grid-template-columns: 1fr;
-        gap: var(--space-32);
+        gap: var(--space-24);
         text-align: center;
     }
 
+    .hero-stats {
+        gap: var(--space-20);
+    }
+
+    .stat-bubble {
+        padding: var(--space-20);
+    }
+
+    /* App showcase */
     .app-phone {
         max-width: 280px;
         margin: 0 auto;
@@ -1402,7 +1427,7 @@ section {
 
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--space-12);
+        gap: var(--space-16);
     }
 
     .feature {
@@ -1410,33 +1435,142 @@ section {
         padding: var(--space-12);
     }
 
+    .app-info h2 {
+        margin-bottom: var(--space-16);
+    }
+
+    .app-tagline {
+        margin-bottom: var(--space-20);
+    }
+
+    .features-grid {
+        margin-bottom: var(--space-20);
+    }
+
+    /* Screenshots */
     .screenshots-grid {
         grid-template-columns: 1fr;
         max-width: 500px;
         margin: 0 auto;
+        gap: var(--space-20);
     }
 
+    .app-screenshots {
+        padding: var(--space-32) 0;
+    }
+
+    /* Services grid */
     .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-16);
+    }
+
+    .service-card {
+        padding: var(--space-20);
+    }
+
+    .service-card h3 {
+        margin-bottom: var(--space-12);
+    }
+
+    /* Mission cards */
+    .mission-grid {
         grid-template-columns: 1fr;
         gap: var(--space-20);
     }
 
-    .mission-grid {
-        grid-template-columns: 1fr;
+    .mission-card {
+        padding: var(--space-20);
     }
 
+    .mission-card h3 {
+        margin-bottom: var(--space-12);
+    }
+
+    /* Get Involved */
     .involvement-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-16);
     }
 
+    .involvement-card {
+        padding: var(--space-20);
+    }
+
+    .involvement-card h3 {
+        margin-bottom: var(--space-12);
+    }
+
+    .involvement-card p {
+        margin-bottom: var(--space-16);
+    }
+
+    /* Testimonials */
     .testimonial-slider {
         grid-template-columns: 1fr;
+        gap: var(--space-16);
     }
 
+    .testimonial {
+        padding: var(--space-20);
+    }
+
+    .testimonial p {
+        margin-bottom: var(--space-12);
+    }
+
+    /* Donate section */
+    .donate-text {
+        margin-bottom: var(--space-24);
+    }
+
+    .donate-impact {
+        grid-template-columns: 1fr;
+        gap: var(--space-16);
+        margin-bottom: var(--space-24);
+    }
+
+    .impact-box {
+        padding: var(--space-16);
+    }
+
+    .impact-box h4 {
+        margin-bottom: var(--space-8);
+    }
+
+    .donate-amounts {
+        margin-bottom: var(--space-20);
+        gap: var(--space-12);
+    }
+
+    .donation-frequency {
+        margin: var(--space-24) auto;
+    }
+
+    .frequency-label {
+        margin-bottom: var(--space-12);
+    }
+
+    .frequency-toggle {
+        margin-bottom: var(--space-16);
+    }
+
+    /* Contact section */
     .contact-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-20);
+        margin-bottom: var(--space-24);
     }
 
+    .contact-item i {
+        margin-bottom: var(--space-12);
+    }
+
+    .contact-item h4 {
+        margin-bottom: var(--space-8);
+    }
+
+    /* App download buttons */
     .app-download {
         flex-direction: column;
         gap: var(--space-12);
@@ -1447,18 +1581,29 @@ section {
         max-width: 300px;
     }
 
-    .donate-impact {
-        grid-template-columns: 1fr;
+    /* Footer */
+    .footer-content {
+        gap: var(--space-20);
+        margin-bottom: var(--space-20);
     }
 
-    .giving-options {
-        grid-template-columns: 1fr;
+    .footer-logo {
+        margin-bottom: var(--space-12);
     }
 
-    section {
-        padding: var(--space-48) 0;
+    .footer-col h4 {
+        margin-bottom: var(--space-12);
     }
 
+    .footer-col li {
+        margin-bottom: var(--space-8);
+    }
+
+    .footer-bottom {
+        padding-top: var(--space-16);
+    }
+
+    /* Container */
     .container {
         padding: 0 var(--space-16);
     }
@@ -1473,18 +1618,57 @@ section {
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-24);
+    }
+
+    .service-card {
+        padding: var(--space-24);
     }
 
     .mission-grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-24);
+    }
+
+    .mission-card {
+        padding: var(--space-24);
     }
 
     .involvement-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-24);
+    }
+
+    .involvement-card {
+        padding: var(--space-24);
     }
 
     section {
-        padding: clamp(60px, 10vh, 100px) 0;
+        padding: clamp(48px, 8vh, 64px) 0;
+    }
+
+    .section-title {
+        margin-bottom: var(--space-32);
+    }
+
+    .hero {
+        padding: var(--space-48) 0;
+    }
+
+    .testimonial-slider {
+        gap: var(--space-24);
+    }
+
+    .testimonial {
+        padding: var(--space-24);
+    }
+
+    .donate-impact {
+        gap: var(--space-24);
+    }
+
+    .contact-grid {
+        gap: var(--space-24);
     }
 }
 
@@ -1523,24 +1707,24 @@ section {
 
     .hero {
         min-height: auto;
-        padding: var(--space-48) 0 var(--space-40);
+        padding: var(--space-32) 0 var(--space-24);
     }
 
     .hero h1 {
-        margin-bottom: var(--space-16);
+        margin-bottom: var(--space-12);
         font-size: clamp(1.75rem, 9vw, 2.25rem) !important;
     }
 
     .hero-tagline {
         font-size: 0.9375rem;
-        margin-bottom: var(--space-24);
+        margin-bottom: var(--space-20);
         line-height: 1.5;
     }
 
     .hero-cta {
         flex-direction: column;
         width: 100%;
-        gap: var(--space-14);
+        gap: var(--space-12);
     }
 
     .hero-cta .btn {
@@ -1569,18 +1753,19 @@ section {
     }
 
     section {
-        padding: var(--space-48) 0;
+        padding: var(--space-32) 0;
     }
 
     .section-title {
         font-size: 1.625rem;
-        margin-bottom: var(--space-16);
+        margin-bottom: var(--space-20);
         line-height: 1.3;
     }
 
     .section-subtitle {
         font-size: 0.875rem;
         line-height: 1.6;
+        margin-bottom: var(--space-20);
     }
 
     .donate-amounts {
@@ -1599,13 +1784,13 @@ section {
     .mission-grid,
     .involvement-grid {
         grid-template-columns: 1fr;
-        gap: var(--space-20);
+        gap: var(--space-16);
     }
 
     .service-card,
     .mission-card,
     .involvement-card {
-        padding: var(--space-24);
+        padding: var(--space-20);
     }
 
     .service-icon,
@@ -1650,19 +1835,20 @@ section {
     }
 
     .testimonial {
-        padding: var(--space-24);
+        padding: var(--space-20);
     }
 
     .quote-icon {
         font-size: 1.5rem;
+        margin-bottom: var(--space-12);
     }
 
     .donate-impact {
-        gap: var(--space-16);
+        gap: var(--space-12);
     }
 
     .impact-box {
-        padding: var(--space-20);
+        padding: var(--space-16);
     }
 
     .btn-donate-lg {
@@ -1684,19 +1870,15 @@ section {
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: var(--space-32);
+        gap: var(--space-24);
     }
 
     .footer-col {
-        padding: var(--space-16) 0;
-    }
-
-    section {
-        padding: var(--space-40) 0;
+        padding: var(--space-12) 0;
     }
 
     .app-screenshots {
-        padding: var(--space-48) 0;
+        padding: var(--space-32) 0;
     }
 
     .scroll-top {
